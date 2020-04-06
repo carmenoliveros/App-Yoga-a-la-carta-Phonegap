@@ -16,13 +16,13 @@
 	<link rel="canonical" href="https://miweb.com/index.html">
 
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
 
-	<link rel="stylesheet" type="text/css" href="vendor/jqueryUI/css/jquery-ui.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/swiper/css/swiper.css">
-	<link rel="stylesheet" type="text/css" href="vendor/sweetalert2/css/sweetalert2.css">
+	<link rel="stylesheet" type="text/css" href="../../vendor/jqueryUI/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../../vendor/swiper/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="../../vendor/sweetalert2/css/sweetalert2.css">
 	<!-- <link rel="stylesheet" type="text/css" href="vendor/particlesjs/css/particles.css"> -->
-	<link rel="stylesheet" type="text/css" href="pantallas/jugar/jugar.css">
+	<link rel="stylesheet" type="text/css" href="../jugar/jugar.css">
 
 	<!-- TITULO Y LOGO -->
 	<link rel="icon" type="icon/png" href="favicon.png">
@@ -30,24 +30,62 @@
 </head>
 <body>
 
+	<!-- Inicio del proyecto -->
+	
+	<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<img style="width: 180px;" src="assets/rsc/img/logoYoga.png" alt="">
+	</div>
 
+	<!-- Menu hamburguesa -->
+	<div style="width: 50px; height: 50px; position: relative; background: transparent; margin: 5px;">
+		<svg class="menu" style="width: 27px; height: 27px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+			<path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+			</path>
+		</svg>
+	</div>
+	<nav>
+		<ul>
+			<li>Enlaces de interes</li>
+			<br>
+			<li><a href="#">Link 1</a></li>
+   			<li><a href="#">Link 2</a></li>
+    		<li><a href="#">Link 3</a></li>
+		</ul>
+		<span id="cerrar">
+			<svg style="width: 18px; height: 18px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</span>
+	</nav>
+	<section style="width: 100%; height: 512px;">
+
+	</section>
+	<footer style="width: 100%; height: 80px;">
+
+		<div class="container" style="display: flex; padding-left: 3px; padding-right: 3px; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		   <button id="cartas" class="columna1 boton1" type="">CARTAS</button>
+		   <button id="series" class="columna2 boton2" type="">SERIES</button>
+		   <button id="jugar" class="columna3 boton3" type="">JUGAR</button>
+		 </div>	
+
+	</footer>
+	
 
 	<!-- SCRIPTS -->
 	<noscript>Debes habilitar JavaScript para disfrutar de la Web</noscript>
-	<script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="vendor/jqueryUI/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="assets/js/popper.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="vendor/swiper/js/swiper.min.js"></script>
-	<script type="text/javascript" src="vendor/sweetalert2/js/sweetalert2.js"></script>
-	<script type="text/javascript" src="vendor/chartjs/js/Chart.min.js"></script>
-	<script type="text/javascript" src="vendor/chartjs/js/Chart.min.js"></script>
-	<script type="text/javascript" src="vendor/chartjs/js/utils.js"></script>
-	<script type="text/javascript" src="vendor/pulltorefresh/js/index.umd.min.js"></script>
+	<script type="text/javascript" src="../../vendor/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../../vendor/jqueryUI/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../vendor/swiper/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../../vendor/sweetalert2/js/sweetalert2.js"></script>
+	<script type="text/javascript" src="../../vendor/chartjs/js/Chart.min.js"></script>
+	<script type="text/javascript" src="../../vendor/chartjs/js/Chart.min.js"></script>
+	<script type="text/javascript" src="../../vendor/chartjs/js/utils.js"></script>
+	<script type="text/javascript" src="../../vendor/pulltorefresh/js/index.umd.min.js"></script>
 	<!-- <script type="text/javascript" src="vendor/particlesjs/js/particles.min.js"></script> -->
 	<!-- <script type="text/javascript" src="vendor/particlesjs/js/app.js"></script> -->
-	<script type="text/javascript" src="pantallas/jugar/jugar.js"></script>
-	<script type="text/javascript"></script>
+	<script type="text/javascript" src="../../assets/js/script.js"></script>
+	<script type="text/javascript" src="../jugar/jugar.js"></script>
+	
 
 
 </body>
