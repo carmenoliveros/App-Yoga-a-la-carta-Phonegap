@@ -21,6 +21,80 @@
 	box-sizing: border-box;
 }
 
+body{
+	background: url('../rsc/img/fondoLetras.png') repeat center center;
+	background-size: cover;
+}
+nav{
+	width: 0%;
+	height: 100vh;
+	background: white;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	transition: 0.5s;
+	opacity: 0.8;
+}
+ul{
+	position: absolute;
+	transform: translateX(-100%);
+	transition: 0.5s;
+	color: #7E7E7E;
+	padding: 70px;
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+nav span{
+	color: white;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	transform: translate(-100%, 0%);
+}
+#cerrar{
+	color: #7E7E7E;
+}
+.boton1{
+	width: 33%; 
+	height: 70px;
+
+	border-radius: 8px; 
+	text-decoration: none; 
+	border: none; 
+	background: #7E68AD; 
+	font-size: 20px; 
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+.boton2{
+	width: 33%; 
+	height: 70px; 
+	border-radius: 8px; 
+	text-decoration: none; 
+	margin-left: 2px;
+	margin-right: 2px; 
+	border: none; 
+	background: #DE76AE; 
+	font-size: 20px; 
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+.boton3{
+	width: 33%; 
+	height: 70px; 
+	border-radius: 8px; 
+	text-decoration: none; 
+	border: none; 
+	background: #4D9C57; 
+	font-size: 20px; 
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
 /* ==================================
 		MEDIA QUERIES 
 ================================== */

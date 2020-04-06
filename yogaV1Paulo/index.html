@@ -30,32 +30,45 @@
 </head>
 <body>
 
-	<!--  ESTE DIV ES NECESARIO SI NECESITAS EL PLUGIN PARTICLESJS
-	<div id="particles-js" style="background: pink;"></div>
-	-->
+	<!-- Inicio del proyecto -->
 	
 
-	<div class="container">
-	  <div class="row">
-	    <div class="col">
-	      1 of 2
-	    </div>
-	    <div class="col">
-	      2 of 2
-	    </div>
-	  </div>
-	  <div class="row">
-	    <div class="col">
-	      1 of 3
-	    </div>
-	    <div class="col">
-	      2 of 3
-	    </div>
-	    <div class="col">
-	      3 of 3
-	    </div>
-	  </div>
+	<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<img style="width: 180px;" src="assets/rsc/img/logoYoga.png" alt="">
 	</div>
+
+	<!-- Menu hamburguesa -->
+	<div style="width: 50px; height: 50px; position: relative; background: transparent; margin: 5px;">
+		<svg class="menu" style="width: 27px; height: 27px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+			<path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+			</path>
+		</svg>
+	</div>
+	<nav>
+		<ul>
+			<li>Enlaces de interes</li>
+			<br>
+			<li><a href="#">Link 1</a></li>
+   			<li><a href="#">Link 2</a></li>
+    		<li><a href="#">Link 3</a></li>
+		</ul>
+		<span id="cerrar">
+			<svg style="width: 18px; height: 18px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</span>
+	</nav>
+	<section style="width: 100%; height: 512px;">
+
+	</section>
+	<footer style="width: 100%; height: 80px;">
+
+		<div class="container" style="display: flex; padding-left: 3px; padding-right: 3px; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		   <button id="cartas" class="columna1 boton1" type="">CARTAS</button>
+		   <button id="series" class="columna2 boton2" type="">SERIES</button>
+		   <button id="jugar" class="columna3 boton3" type="">JUGAR</button>
+		 </div>	
+
+	</footer>
+	
 
 	<!-- SCRIPTS -->
 	<noscript>Debes habilitar JavaScript para disfrutar de la Web</noscript>
@@ -75,6 +88,35 @@
 	<script type="text/javascript">
 		//Iniciar Swiper (si es que lo uso)
 		//var swiper = new Swiper('.swiper-container');
+
+		/* Menu hamburguesa */
+
+		$(".menu").click(function(){
+			//Aparece menú y X
+			$("nav").css("width", "70%");
+			$("nav span").css("transform", "translate(-50%, 50%)");
+			//Aparecen los elementos del menú 0,25segundos después
+			setTimeout(function(){
+				$("ul").css("transform", "translateX(0%)");
+			},250);
+		});
+
+		//Para volver a replegar el menú lateral izquierdo cuando pulso la X:
+		$("#cerrar").click(function(){
+			//Desaparecen los elementos del menú
+			$("ul").css("transform", "translateX(-100%)");
+			//Desaparecen menú y X 0,25segundos después
+			setTimeout(function(){
+				$("nav").css("width", "0%");
+				$("nav span").css("transform", "translate(-100%, 0%)");
+			},250);
+		});
+
+		//Click en btn SERIES y me lleva a series.html
+
+		$("#series").click(function(){
+			window.location = "series.html";
+		});
 		
 	</script>
 
