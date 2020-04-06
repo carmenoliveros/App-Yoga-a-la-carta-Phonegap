@@ -1,0 +1,36 @@
+/* ==================================
+		FUENTES PERSONALIZADAS 
+================================== */ 
+@font-face{
+	font-family: '';
+	src: url('') format('');
+
+}
+
+/* ==================================
+		VARIABLES 
+================================== */ 
+:root{}
+
+/* ==================================
+		CSS COMÚN 
+================================== */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* ==================================
+		MEDIA QUERIES 
+================================== */
+@media screen and (orientation: landscape){}
+@media screen and (orientation: portrait){}
+
+/* ==================================
+		ANIMACIONES
+================================== */ 
+@keyframes animacion{
+	0%{}
+	100%{}
+}
